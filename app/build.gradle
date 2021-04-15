@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '25.0.3'
+
+    defaultConfig {
+        applicationId "com.anusha.twodboxes"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 5
+        versionName "5.0"
+    }
+    signingConfigs {
+        release {
+            storeFile file("myreleasekey.keystore")
+            storePassword "password"
+            keyAlias "MyReleaseKey"
+            keyPassword "password"
+            v2SigningEnabled true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+}
+
+/*
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:28.0.0'
+    compile 'com.google.android.gms:play-services-ads:17.0.0'
+}
+*/

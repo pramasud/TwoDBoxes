@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/gradient_rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="0dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#E8A270">
+        <TextView
+            android:id="@+id/userTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/settingUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="0dp"
+    android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+    android:background="#E8A230">
+
+    <Button
+        android:id="@+id/buttonUserCommit"
+        android:soundEffectsEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_update" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#E8A260">
+        <TextView
+            android:id="@+id/soundTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sound"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_weight=".25"/>
+
+        <RadioButton android:id="@+id/radioSoundMute"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mute_sound"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radioSoundUnMute"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unmute_sound"
+            android:onClick="onRadioButtonClicked"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#E8A280">
+        <TextView
+            android:id="@+id/gridSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/grid_size"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <RadioButton android:id="@+id/radioGridSix"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grid_6_6"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radioGridEight"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grid_8_8"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radioGridTen"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grid_10_10"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radioGridTwelve"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/grid_12_12"
+            android:onClick="onRadioButtonClicked"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#E8A2B4">
+        <TextView
+            android:id="@+id/preFill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pre_fill"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <RadioButton android:id="@+id/radioPreFill2"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pre_fill_1_2"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radioPreFill3"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pre_fill_1_3"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radioPreFill4"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pre_fill_1_4"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radioPreFillNone"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pre_fill_none"
+            android:onClick="onRadioButtonClicked"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#E8A2D0">
+        <TextView
+            android:id="@+id/gameMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/game_mode"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <RadioButton android:id="@+id/radioGameModeNormal"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_normal"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radioGameModeComplex"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_complex"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radioGameModeAdvanced"
+            android:soundEffectsEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_advanced"
+            android:onClick="onRadioButtonClicked"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="#E8A2F0">
+        <TextView
+            android:id="@+id/winDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/win_details"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/complexWinsValues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complex : 0"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/advancedWinsValues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advanced : 0"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
