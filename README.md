@@ -8,7 +8,7 @@ It is a game with only 2 rules.
 
 ![image](https://user-images.githubusercontent.com/44316307/118472005-ffe80200-b725-11eb-9055-747e5be6a3af.png)
 
-3) If the line you created happens to complete a Box, you get the next move free.
+2) If the line you created happens to complete a Box, you get the next move free.
 
 The winner is the player with more number of boxes.
 
